@@ -58,7 +58,7 @@ def criar_agendamento(
         )
     try:
         resposta = requests.get(
-            f"http://127.0.0.1:8001/pets/{agendamento.pet_id}",
+           f"http://127.0.0.1:8081/pets/{agendamento.pet_id}",
             timeout=5
         )
     except requests.exceptions.RequestException:
